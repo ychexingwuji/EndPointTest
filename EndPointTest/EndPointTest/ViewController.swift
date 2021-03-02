@@ -12,13 +12,13 @@ import Alamofire
 class ViewController: UIViewController {
     
     var textView: UITextView!
+    var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initUI()
-        
-        reqData()
+        loadData()
     }
     
     func initUI() {
@@ -31,7 +31,15 @@ class ViewController: UIViewController {
         self.view.addSubview(textView)
     }
     
-    func reqData() {
+    func loadData() {
+        timer = Timer.scheduledTimer(timeInterval: 5,
+                                     target: self,
+                                     selector: #selector(reqData),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    
+    @objc func reqData() {
         Alamofire.AF.request("https://api.github.com/").responseJSON { (response) in
             switch response.result {
             case .success(let json):

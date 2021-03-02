@@ -13,12 +13,15 @@ class ViewController: UIViewController {
     
     var textView: UITextView!
     var timer: Timer!
+    var storeManager: StoreManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initUI()
         loadData()
+        
+        beiginFetchData()
     }
     
     func initUI() {
@@ -32,6 +35,16 @@ class ViewController: UIViewController {
     }
     
     func loadData() {
+        storeManager = StoreManager()
+        
+        if let latestFileName = storeManager.fetchLastFileName() {
+            let data = Data.init(cachefileName: latestFileName)
+            let jsonStr = String(data: data!, encoding: .utf8)! as String
+            self.textView.text = jsonStr
+        }
+    }
+    
+    func beiginFetchData() {
         timer = Timer.scheduledTimer(timeInterval: 5,
                                      target: self,
                                      selector: #selector(reqData),
@@ -46,6 +59,7 @@ class ViewController: UIViewController {
                 
                 if JSONSerialization.isValidJSONObject(json) {
                     let data = try!JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+                    self.storeManager.saveData(data);
                     let jsonStr = String(data: data, encoding: .utf8)! as String
                     self.textView.text = jsonStr
                 }

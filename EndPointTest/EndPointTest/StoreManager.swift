@@ -59,4 +59,23 @@ class StoreManager: NSObject {
     func fetchLastFileName() -> String? {
         return UserDefaults.standard.object(forKey: "kLastFileName") as? String
     }
+    
+    func getCacheFileNames() -> [String] {
+        var fileNames = [String]()
+        
+        do {
+            let array = try FileManager.default.contentsOfDirectory(atPath: cachePath)
+            
+            for fileName in array {
+                if fileName != ".DS_Store" {
+                    fileNames.append(fileName)
+                }
+            }
+            
+        } catch let error as NSError {
+            print("get file path error: \(error)")
+        }
+        
+        return fileNames;
+    }
 }

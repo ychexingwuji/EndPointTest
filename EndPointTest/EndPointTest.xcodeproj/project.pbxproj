@@ -18,6 +18,7 @@
 		F377421B25EE7C8E004C52E8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F377421A25EE7C8E004C52E8 /* Alamofire */; };
 		F377421F25EE8DC7004C52E8 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377421E25EE8DC7004C52E8 /* StoreManager.swift */; };
 		F377422125EF30B4004C52E8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377422025EF30B4004C52E8 /* HistoryViewController.swift */; };
+		F377422325EF3BF0004C52E8 /* HistoryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377422225EF3BF0004C52E8 /* HistoryDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F365278A25E6488700751061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F377421E25EE8DC7004C52E8 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		F377422025EF30B4004C52E8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F377422225EF3BF0004C52E8 /* HistoryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				F365276825E6488600751061 /* SceneDelegate.swift */,
 				F365276A25E6488600751061 /* ViewController.swift */,
 				F377422025EF30B4004C52E8 /* HistoryViewController.swift */,
+				F377422225EF3BF0004C52E8 /* HistoryDetailController.swift */,
 				F377421E25EE8DC7004C52E8 /* StoreManager.swift */,
 				F365276C25E6488600751061 /* Main.storyboard */,
 				F365276F25E6488700751061 /* Assets.xcassets */,
@@ -278,6 +281,7 @@
 				F365276725E6488600751061 /* AppDelegate.swift in Sources */,
 				F377422125EF30B4004C52E8 /* HistoryViewController.swift in Sources */,
 				F365276925E6488600751061 /* SceneDelegate.swift in Sources */,
+				F377422325EF3BF0004C52E8 /* HistoryDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

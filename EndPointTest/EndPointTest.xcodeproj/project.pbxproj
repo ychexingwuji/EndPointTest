@@ -17,6 +17,7 @@
 		F365278925E6488700751061 /* EndPointTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365278825E6488700751061 /* EndPointTestUITests.swift */; };
 		F377421B25EE7C8E004C52E8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F377421A25EE7C8E004C52E8 /* Alamofire */; };
 		F377421F25EE8DC7004C52E8 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377421E25EE8DC7004C52E8 /* StoreManager.swift */; };
+		F377422125EF30B4004C52E8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377422025EF30B4004C52E8 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		F365278825E6488700751061 /* EndPointTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTestUITests.swift; sourceTree = "<group>"; };
 		F365278A25E6488700751061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F377421E25EE8DC7004C52E8 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		F377422025EF30B4004C52E8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F365276625E6488600751061 /* AppDelegate.swift */,
 				F365276825E6488600751061 /* SceneDelegate.swift */,
 				F365276A25E6488600751061 /* ViewController.swift */,
+				F377422025EF30B4004C52E8 /* HistoryViewController.swift */,
 				F377421E25EE8DC7004C52E8 /* StoreManager.swift */,
 				F365276C25E6488600751061 /* Main.storyboard */,
 				F365276F25E6488700751061 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 				F365276B25E6488600751061 /* ViewController.swift in Sources */,
 				F377421F25EE8DC7004C52E8 /* StoreManager.swift in Sources */,
 				F365276725E6488600751061 /* AppDelegate.swift in Sources */,
+				F377422125EF30B4004C52E8 /* HistoryViewController.swift in Sources */,
 				F365276925E6488600751061 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

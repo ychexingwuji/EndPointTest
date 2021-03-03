@@ -32,6 +32,12 @@ class ViewController: UIViewController {
         textView = UITextView(frame: CGRect(x: sideSpace, y: sideSpace, width: contentWidth , height: contentHeight))
         
         self.view.addSubview(textView)
+        
+        let item = UIBarButtonItem(title: "History",
+                                  style: UIBarButtonItem.Style.plain,
+                                  target: self,
+                                  action: #selector(showHistory))
+        self.navigationItem.rightBarButtonItem = item
     }
     
     func loadData() {
@@ -42,6 +48,10 @@ class ViewController: UIViewController {
             let jsonStr = String(data: data!, encoding: .utf8)! as String
             self.textView.text = jsonStr
         }
+    }
+    
+    @objc func showHistory() {
+        self.navigationController?.pushViewController(HistoryViewController.init(), animated: true)
     }
     
     func beiginFetchData() {
